@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HaulConnectDesktop.Shared.Domain</name>
+    </assembly>
+    <members>
+        <member name="P:HaulConnectDesktop.Shared.Domain.Carrybacks.Entities.Carryback.StartTare">
+            <summary>
+            Value from Latest Tare of 'Dump Truck'
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.Carrybacks.Entities.Carryback.NewTare">
+            <summary>
+            Value from "Weighbridge" device/sensor when "WB Out"
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.OperatorWBId">
+            <summary>
+            Consider "User Id" from Operator in WB In
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.ShiftScheduleDate">
+            <summary>
+            Akan di-isi secara manual oleh User, ketika DT masuk WB In
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.CycleOrder">
+            <summary>
+            Cycle Order per Dump Truck per Driver Shift schedule
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.Gross">
+            <summary>
+            Nilai 'Gross' dari sensor Jembatan Timbang ketika Dump Truck "WB In"
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.Tare">
+            <summary>
+            Tare yang tampil sebagai "Pop-up" value-nya berasal dari "Jembatan Timbang" ketika Dump Truck "WB Out" dan 
+            akan di-simpan kedalam table "DumpTruckTares/History" sampai 30x untuk "DumpTruck" baru, untuk "DumpTruck" lama 1x minggu
+            Tare yang tampil di "List of Weighbridge" adalah nilai "Tare" ter-update dari table "Dump Truck"
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.Overload">
+            <summary>
+            Status Payload
+            Penentuan status: Normal, Overload, Underload berdasarkan nilai deviasi "Real Tare (ketika WB OUT)" antara "Min dan Max Tare"
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.StatusCycle">
+            <summary>
+            CycleStatus => 1: On-Progress, 2: Completed
+            Penentuan status "On-Progress" ketika Dump Truck "Pass In" di Lampunut/CHPP
+            Penentuan status "Completed" ketika Dump Truck "WB Out"
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.StartHM">
+            <summary>
+            Start HM akan menjadi Last HM di-cycle berikutnya
+            </summary>
+        </member>
+        <member name="T:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Enums.CycleStatus">
+            <summary>
+            Cycle Status for Trip (46 to 46) and for Hauling Transaction Data Reconcile (Pass In - WB Out)
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.Tags.Entities.Tag.Code">
+            <summary>
+            EPC (Electronic Product Code)
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.Trips.Abstracts.TripAbstract.TravelTimeBySta">
+            <summary>
+            Total Duration of "currentTrip.Timestamp - previousTrip.Timestamp
+            </summary>
+        </member>
+        <member name="P:HaulConnectDesktop.Shared.Domain.Trips.Abstracts.TripAbstract.DistanceBySta">
+            <summary>
+            currentTrip.StationKilometer - previousTrip.StationKilometer
+            </summary>
+        </member>
+    </members>
+</doc>
