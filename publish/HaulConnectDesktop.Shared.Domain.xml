@@ -64,6 +64,11 @@
             Cycle Status for Trip (46 to 46) and for Hauling Transaction Data Reconcile (Pass In - WB Out)
             </summary>
         </member>
+        <member name="F:HaulConnectDesktop.Shared.Domain.Locations.Enums.DetectionType.SharedAntenna">
+            <summary>
+            Antenna 1 or 2 is equal or shared
+            </summary>
+        </member>
         <member name="P:HaulConnectDesktop.Shared.Domain.Tags.Entities.Tag.Code">
             <summary>
             EPC (Electronic Product Code)
