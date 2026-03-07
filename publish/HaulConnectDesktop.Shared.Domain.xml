@@ -14,6 +14,11 @@
             Value from "Weighbridge" device/sensor when "WB Out"
             </summary>
         </member>
+        <member name="T:HaulConnectDesktop.Shared.Domain.Common.Enums.TravelStatus">
+            <summary>
+            Anomaly Trip (Travel Status)
+            </summary>
+        </member>
         <member name="P:HaulConnectDesktop.Shared.Domain.HaulingTransactions.Entities.HaulingTransaction.OperatorWBId">
             <summary>
             Consider "User Id" from Operator in WB In
