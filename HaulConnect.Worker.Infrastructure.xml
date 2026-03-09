@@ -4,5 +4,32 @@
         <name>HaulConnect.Worker.Infrastructure</name>
     </assembly>
     <members>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripService.DetermineUnitTravelStatus(HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Infrastructure.Trips.PreviousTripBase,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+            <summary>
+            Check is Travel status of Dump Truck is Anomaly (Overspeed/Delay) or not.
+            <br />
+            And if Dump Truck is Anomaly Delay, then check is Breakdown or not
+            </summary>
+        </member>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripService.CheckIsConvoyOrNotAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+            <summary>
+            Check is convoy or not (less than 70 meters or less thhan 6 seconds)
+            </summary>
+        </member>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripService.CheckIfThereIsAQueueAtTheLoadingPointAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+            <summary>
+            Check if there is a queue at the loading point more than 3 units.
+            </summary>
+        </member>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripService.CheckIfLoadingTimeIsTooLongAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+            <summary>
+            Check is Loading Time > 30 minutes or not, from first timwstamp Loading Started and current timestamp of Dump Truck
+            </summary>
+        </member>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripService.CheckIfAnyUnitThatNotYetPassedOutAsync(HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,System.Threading.CancellationToken)">
+            <summary>
+            Check if there's Unit that not yet Passed Out > 45 minutes after loading finished
+            </summary>
+        </member>
     </members>
 </doc>
