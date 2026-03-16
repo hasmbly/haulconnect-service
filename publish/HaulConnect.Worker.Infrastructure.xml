@@ -31,5 +31,14 @@
             Check if there's Unit that not yet Passed Out > 45 minutes after loading finished
             </summary>
         </member>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripService.CheckIfAnyUnitStandByAfterDumpingAsync(HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,System.Threading.CancellationToken)">
+            <summary>
+            Check if there's Unit standby after loading Dumping finished
+            </summary>
+            <param name="dateAndTimeService"></param>
+            <param name="databaseService"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
