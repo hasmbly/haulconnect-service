@@ -12,6 +12,7 @@
           "HaulConnect.Worker.Infrastructure": "0.0.1",
           "Microsoft.EntityFrameworkCore.Design": "10.0.1",
           "Microsoft.Extensions.Hosting": "10.0.5",
+          "System.Security.Cryptography.Xml": "10.0.6",
           "HaulConnect.Worker.Domain.Reference": "0.0.1.0",
           "HaulConnect.Worker.Infrastructure.Reference": "0.0.1.0",
           "HaulConnect.Worker.Services.Reference": "0.0.1.0",
@@ -864,9 +865,9 @@
           "System.Diagnostics.EventLog": "10.0.5",
           "System.Formats.Nrbf": "9.0.0",
           "System.Resources.Extensions": "9.0.0",
-          "System.Security.Cryptography.Pkcs": "9.0.4",
+          "System.Security.Cryptography.Pkcs": "10.0.6",
           "System.Security.Cryptography.ProtectedData": "9.0.4",
-          "System.Security.Cryptography.Xml": "9.0.0"
+          "System.Security.Cryptography.Xml": "10.0.6"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Build.Tasks.Core.dll": {
@@ -1120,9 +1121,9 @@
           "System.Configuration.ConfigurationManager": "9.0.4",
           "System.Diagnostics.EventLog": "10.0.5",
           "System.Resources.Extensions": "9.0.0",
-          "System.Security.Cryptography.Pkcs": "9.0.4",
+          "System.Security.Cryptography.Pkcs": "10.0.6",
           "System.Security.Cryptography.ProtectedData": "9.0.4",
-          "System.Security.Cryptography.Xml": "9.0.0",
+          "System.Security.Cryptography.Xml": "10.0.6",
           "System.Security.Permissions": "9.0.0",
           "System.Windows.Extensions": "9.0.0"
         },
@@ -1188,7 +1189,7 @@
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.7.1",
           "Microsoft.SqlServer.Server": "1.0.0",
           "System.Configuration.ConfigurationManager": "9.0.4",
-          "System.Security.Cryptography.Pkcs": "9.0.4"
+          "System.Security.Cryptography.Pkcs": "10.0.6"
         },
         "runtime": {
           "runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll": {
@@ -2042,11 +2043,11 @@
           }
         }
       },
-      "System.Security.Cryptography.Pkcs/9.0.4": {
+      "System.Security.Cryptography.Pkcs/10.0.6": {
         "runtime": {
-          "lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.425.16305"
+          "lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.626.17701"
           }
         }
       },
@@ -2058,14 +2059,14 @@
           }
         }
       },
-      "System.Security.Cryptography.Xml/9.0.0": {
+      "System.Security.Cryptography.Xml/10.0.6": {
         "dependencies": {
-          "System.Security.Cryptography.Pkcs": "9.0.4"
+          "System.Security.Cryptography.Pkcs": "10.0.6"
         },
         "runtime": {
-          "lib/net9.0/System.Security.Cryptography.Xml.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52809"
+          "lib/net10.0/System.Security.Cryptography.Xml.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.626.17701"
           }
         }
       },
@@ -2775,12 +2776,12 @@
       "path": "system.resources.extensions/9.0.0",
       "hashPath": "system.resources.extensions.9.0.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.Pkcs/9.0.4": {
+    "System.Security.Cryptography.Pkcs/10.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cUFTcMlz/Qw9s90b2wnWSCvHdjv51Bau9FQqhsr4TlwSe1OX+7SoXUqphis5G74MLOvMOCghxPPlEqOdCrVVGA==",
-      "path": "system.security.cryptography.pkcs/9.0.4",
-      "hashPath": "system.security.cryptography.pkcs.9.0.4.nupkg.sha512"
+      "sha512": "sha512-88tquaGJ1htm4DHWS6x9jwER7sFET2SVRN7HqO1FYZwE0diDcUmz0ajhVa8ZD2HGhDJBueSPjP/gqyP3gXtT2A==",
+      "path": "system.security.cryptography.pkcs/10.0.6",
+      "hashPath": "system.security.cryptography.pkcs.10.0.6.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/9.0.4": {
       "type": "package",
@@ -2789,12 +2790,12 @@
       "path": "system.security.cryptography.protecteddata/9.0.4",
       "hashPath": "system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
     },
-    "System.Security.Cryptography.Xml/9.0.0": {
+    "System.Security.Cryptography.Xml/10.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GQZn5wFd+pyOfwWaCbqxG7trQ5ox01oR8kYgWflgtux4HiUNihGEgG2TktRWyH+9bw7NoEju1D41H/upwQeFQw==",
-      "path": "system.security.cryptography.xml/9.0.0",
-      "hashPath": "system.security.cryptography.xml.9.0.0.nupkg.sha512"
+      "sha512": "sha512-71yFkEElPZKZ9jbZQTe1CWeHYXEtnCXwZnHnfeA8pP47tCXBUoWk+6zSIZ7RXO90nZjXgPNil6BFGWb1OBqA5w==",
+      "path": "system.security.cryptography.xml/10.0.6",
+      "hashPath": "system.security.cryptography.xml.10.0.6.nupkg.sha512"
     },
     "System.Security.Permissions/9.0.0": {
       "type": "package",
