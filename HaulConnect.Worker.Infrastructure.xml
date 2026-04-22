@@ -11,33 +11,34 @@
             And if Dump Truck is Anomaly Delay, then check is Breakdown or not
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIsConvoyOrNotAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIsConvoyOrNotAsync(HaulConnect.Worker.Services.Notification.INotificationService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
             <summary>
             Check is convoy or not (less than 70 meters or less thhan 6 seconds)
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfThereIsAQueueAtTheLoadingPointAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfThereIsAQueueAtTheLoadingPointAsync(HaulConnect.Worker.Services.Notification.INotificationService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,System.Threading.CancellationToken)">
             <summary>
             Check if there is a queue at the loading point more than 3 units.
             <br />This method running every 60 seconds and check from last 60 seconds ago from current time.
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfLoadingTimeIsTooLongAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfLoadingTimeIsTooLongAsync(HaulConnect.Worker.Services.Notification.INotificationService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
             <summary>
             Check is Loading Time > 30 minutes or not, from first timwstamp Loading Started and current timestamp of Dump Truck
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfAnyUnitThatNotYetPassedOutAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfAnyUnitThatNotYetPassedOutAsync(HaulConnect.Worker.Services.Notification.INotificationService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,System.Threading.CancellationToken)">
             <summary>
             Check if there's Unit that not yet Passed Out > 45 minutes after Unit Pass In in Lampunut
             <br />This method running every 60 seconds and check from last 60 seconds ago from current time.
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfAnyUnitStandByAfterDumpingAsync(HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIfAnyUnitStandByAfterDumpingAsync(HaulConnect.Worker.Services.Notification.INotificationService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Services.DateAndTime.IDateAndTimeService,System.Threading.CancellationToken)">
             <summary>
             Check if there's Unit standby after loading Dumping finished
             <br />This method running every 60 seconds and check from last 60 seconds ago from current time.
             </summary>
+            <param name="notificationService"></param>
             <param name="dateAndTimeService"></param>
             <param name="databaseService"></param>
             <param name="cancellationToken"></param>
