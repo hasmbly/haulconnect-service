@@ -11,7 +11,7 @@
             And if Dump Truck is Anomaly Delay, then check is Breakdown or not
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.TripNotificationFactory.CheckIsConvoyOrNotAsync(HaulConnect.Worker.Services.Notification.INotificationService,HaulConnect.Worker.Infrastructure.Database.AmcDbHaulConnectContext,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.CheckIsConvoyOrNotAsync(System.Threading.CancellationToken)">
             <summary>
             Check is convoy or not (less than 70 meters or less thhan 6 seconds)
             </summary>
