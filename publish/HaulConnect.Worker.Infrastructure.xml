@@ -4,7 +4,7 @@
         <name>HaulConnect.Worker.Infrastructure</name>
     </assembly>
     <members>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitTravelStatus(HaulConnect.Worker.Infrastructure.Trips.Models.PreviousTripDto,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitTravelStatus(System.Threading.CancellationToken)">
             <summary>
             Check is Travel status of Dump Truck is Anomaly (Overspeed/Delay) or not.
             <br />
