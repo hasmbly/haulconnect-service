@@ -4,11 +4,16 @@
         <name>HaulConnect.Worker.Infrastructure</name>
     </assembly>
     <members>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitTravelStatus(System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitDelay(System.Threading.CancellationToken)">
             <summary>
             Check is Travel status of Dump Truck is Anomaly (Overspeed/Delay) or not.
             <br />
             And if Dump Truck is Anomaly Delay, then check is Breakdown or not
+            </summary>
+        </member>
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitOverspeed(HaulConnect.Worker.Infrastructure.Trips.Models.PreviousTripDto,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+            <summary>
+            Check is Travel status of Dump Truck is Overspeed or not.
             </summary>
         </member>
         <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.CheckIsConvoyOrNotAsync(System.Threading.CancellationToken)">
