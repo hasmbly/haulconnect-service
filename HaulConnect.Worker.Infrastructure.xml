@@ -11,7 +11,7 @@
             And if Dump Truck is Anomaly Delay, then check is Breakdown or not
             </summary>
         </member>
-        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitOverspeed(HaulConnect.Worker.Infrastructure.Trips.Models.PreviousTripDto,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
+        <member name="M:HaulConnect.Worker.Infrastructure.Trips.Notifications.TripNotificationHajuService.DetermineUnitOverspeedOrDelay(HaulConnect.Worker.Infrastructure.Trips.Models.PreviousTripDto,HaulConnect.Worker.Domain.Entities.Trip,System.Threading.CancellationToken)">
             <summary>
             Check is Travel status of Dump Truck is Overspeed or not.
             </summary>
